@@ -29,6 +29,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import edu.farmingdale.pizzaparty.ui.theme.PizzaPartyTheme
+import kotlin.math.ceil
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -75,7 +76,6 @@ fun PizzaPartyScreen(modifier: Modifier = Modifier) {
         )
         Button(
             onClick = {
-                calculateNumPizzas(0, selectedValue)
             },
             modifier = modifier.fillMaxWidth()
         ) {
